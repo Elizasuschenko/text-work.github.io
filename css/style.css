@@ -1,0 +1,985 @@
+@font-face{
+	font-family: "Arail";
+	src: url(../font/arial.ttf);
+	font-weight: normal;
+}
+@font-face{
+	font-family: "Trebuc";
+	src: url(../font/trebuc.ttf);
+	font-weight: normal;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	color: black;
+}
+/* Header */
+header{
+	background-color: #00C0F5;
+	min-height: 105px;
+	padding-top: 30px;
+}
+.logo a{
+	display: block;
+	text-decoration: none;
+}
+.logo-img{
+	display: inline-block;
+	height: 45px;
+	width: 175px;
+	background-image: url(../img/LOGO-SVG.png);
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.logo-text{
+	margin-left: 5px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+}
+.logo-text span{
+	font-family: "Arail";
+	display: block;
+	color: white;
+	font-size: 16px;	
+	line-height: 23px;											
+}
+.tel{
+	text-align: right;
+}
+.tel span{
+	font-size: 30px;
+	font-family: "Arail";
+	color: white;
+	line-height: 50px;
+}
+.back{
+	text-align: center;
+}
+.back a{
+	font-family: "Arail";
+	text-decoration: none;
+	line-height: 50px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+.soc{
+	position: relative;
+	height: 50px;
+}
+.soc-block{
+	top: 10px;
+	position: absolute;
+	right: 20px;
+}
+.soc a{
+	margin-left: 10px;
+}
+.soc img{
+	width: 30px;
+	height: 30px;
+}
+
+/* Section */
+.big-bg{
+	background-image: url(../img/big-bg.png);
+	background-size: 100% 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 550px;
+	position: relative;
+}
+.yellow-block{
+	position: absolute;
+	left: 30px;
+	bottom: 50px;
+	background-color: rgba(255, 242, 27, 0.7);
+	height: 230px;
+	width: 230px;
+	border-radius: 100%;
+	text-align: center;
+}
+.yellow-block span{
+	font-family: "Trebuc";
+	display: block;
+}
+.yellow-block span:first-of-type{
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 35px;
+	line-height: 30px;
+	color: black;
+}
+.yellow-block span:nth-of-type(2){
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	margin-top: 10px;
+}
+.yellow-block span:last-of-type{
+	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	margin-top: 3px;
+	background-color: black;
+	padding: 0px 8px;
+}
+.big-info-left{
+	margin-bottom: 25px;
+	margin-top: 30px;
+}
+.big-info-left a{
+	color: black;
+	border-bottom: 1px solid black;
+	font-family: "Trebuc";
+	font-size: 35px;
+	font-weight: bold;
+	margin-right: 30px;
+}
+.big-info-left span{
+	font-family: "Trebuc";
+	font-size: 35px;
+	font-weight: bold;
+	margin-left: 30px;
+	color: black;
+}
+.big-info-hotel{
+	display: inline-block;
+	margin-top: 5px;
+}
+.big-info-hotel span{
+	font-weight: bold;
+	color: black;
+	display: block;
+}
+.big-info-hotel a{
+	color: #787878;
+	font-weight: bold;
+	font-size: 14px;
+}
+.big-info-hotel-number{
+	font-family: "Trebuc";
+	color: white;
+	vertical-align: top;
+	font-size: 24px;
+	font-weight: bold;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin-left: 35px;
+	margin-right: 30px;
+	background-color: #00C0F5;
+	text-align: center;
+	line-height: 50px;
+}
+.big-info-block{
+	display: inline-block;
+	margin-right: 15px;
+}
+.big-info-block span{
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.big-info-block span:first-of-type{
+	color: #787878;
+	font-size: 12px;
+	line-height: 13px;
+}
+.big-info-block span:last-of-type{
+	color: black;
+	font-size: 18px;
+	line-height: 19px;
+}
+.big-info-service{
+	display: inline-block;
+}
+.big-info-right span{
+	display: block;
+}
+.big-info-right span:first-of-type{
+	font-size: 100px;
+	font-family: "Trebuc";
+	line-height: 100px;
+	color: #787878;
+	margin-top: -25px;
+}
+.big-info-right span:last-of-type{
+	color: black;
+	font-size: 30px;
+	line-height: 35px;
+}
+.extrim{
+	margin-top: 35px;
+}
+.extrim-pic img{
+	width: 100%;
+	position: relative;
+}
+.extrim-text{
+	position: relative;
+	margin-bottom: 60px;
+}
+.extrim-text .name{
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: "Trebuc";
+	color: black;
+	border-bottom: 1px solid #CDCDCD;
+	margin-top: 25px;
+}
+.extrim-text .type{
+	display: block;
+	font-size: 14px;
+	color: #787878;
+	margin-top: 15px;
+}
+.extrim-text .cena{
+	font-family: "Trebuc";
+	font-weight: bold;
+	font-size: 50px;
+	color: black;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.extrim-text .sale{
+	font-family: "Trebuc";
+	font-size: 20px;
+	line-height: 20px;
+	width: 40px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color:red;
+	text-decoration:line-through
+}
+.extrim-text .sale span{
+	color: #787878;
+}
+.text h1{
+	font-size: 50px;	
+	font-weight: bold;
+	color: black;
+	font-family: "Trebuc";
+}
+.text p{
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.text p:first-of-type{
+	font-size: 16px;
+}
+.text h2{
+	font-size: 22px;
+	font-weight: bold;
+}
+.text .blue{
+	display: block;
+	font-size: 14px;
+	background-color: #ECFBFE;
+	border-left: 3px solid #00CDF7;
+	margin-bottom: 20px;
+	padding: 15px 10px;
+	margin-left: 25px;
+}
+table th, table td{
+	width: 130px;
+	padding: 8px 0;
+}
+table th{
+	font-size: 12px;
+}
+table td{
+	font-size: 14px;
+}
+table tr:first-of-type{
+	background-color: #ECECEC;
+	border-bottom: 1px solid black;
+}
+table tr th:first-of-type{
+	padding-left: 24px;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+.time{
+	color: red;
+	display: block;
+	padding-bottom: 15px;
+	font-size: 18px;
+}
+aside{
+	padding-top: 210px;
+}
+aside span{
+	font-family: "Trebuc";
+	margin-left: 8%;
+	display: block;
+}
+aside span:first-of-type{
+	font-size: 100px;
+	color: #787878;
+	line-height: 120px;
+}
+aside span:nth-of-type(2){
+	font-size: 30px;
+	color: black;
+	line-height: 40px;
+}
+aside span:last-of-type{
+	font-size: 20px;
+	color: #787878;
+}
+.line{
+	height: 1px;
+	display: block;
+	background-color: #787878;
+}
+/* Footer */
+footer{
+	height: 50px;
+}
+footer p{
+	line-height: 50px;
+	font-size: 12px;
+}
+@media (min-width:320px) and (max-width:480px){
+	header{
+	height: 100%;
+}
+.logo{
+	border-bottom: 1px solid white;
+}
+.logo-img{
+	height: 45px;
+	width: 145px;
+}
+.logo-text span{
+	font-size: 15px;	
+	line-height: 20px;											
+}
+.tel{
+	text-align: left;
+}
+.tel span{
+	font-size: 19px;
+	line-height: 40px;
+}
+.back a{
+	line-height: 40px;
+}
+.soc{
+	display: none;
+}
+/* Section */
+.big{
+	padding: 0;
+}
+.big-bg{
+	height: 220px;
+}
+.yellow-block{
+	left: 10px;
+	bottom: 20px;
+	height: 170px;
+	width: 170px;
+}
+.yellow-block span:first-of-type{
+	font-size: 19px;
+	margin-top: 22px;
+	line-height: 22px;
+}
+.yellow-block span:nth-of-type(2){
+	font-size: 13px;
+	margin-top: 6px;
+}
+.yellow-block span:last-of-type{
+	font-size: 19px;
+}
+.big-info .col-xs-8, .big-info .col-xs-4{
+	padding: 0;
+}
+.big-info-left{
+	padding: 0;
+}
+.big-info-service{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+.big-info-left a{
+	display: block;
+	color: black;
+	text-decoration: underline;
+	border: none;
+	font-size:19px;
+	margin-right: 30px;
+}
+.big-info-left img{
+	margin-top: 15px;
+	width: 18px;
+	vertical-align: top;
+}
+.big-info-left span{
+	font-size: 30px;
+}
+.big-info-hotel{
+	display: inline-block;
+	margin-top: 5px;
+}
+.block-info{
+	width: 95vw;
+	position: relative;
+	padding: 0;
+}
+.big-info-hotel span{
+	font-weight: bold;
+	color: black;
+	display: block;
+}
+.big-info-hotel a{
+	font-style: 14px;
+}
+.big-info-hotel-number{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	margin-left: 0;
+	line-height: 40px;
+	margin-right: 0;
+}
+.big-info-block{
+	display: inline-block;
+	margin-right: 14px;
+}
+.big-info-block span{
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.big-info-block span:first-of-type{
+	font-size: 11px;
+}
+.big-info-block span:last-of-type{
+	font-size: 18px;
+	line-height: 19px;
+}
+.big-info-right{
+	text-align: center;
+}
+.big-info-right span{
+	display: block;
+}
+.big-info-right span:first-of-type{
+	font-size: 34px;
+	line-height: 29px;
+	margin-top: -15px;
+	margin-left: 0px;
+}
+.big-info-right span:last-of-type{
+	font-size: 18px;
+	line-height: 21px;
+	max-width: 132px;
+	display: block;
+	margin: 0 auto;
+}
+.extrim{
+	margin-top: 35px;
+}
+.extrim-text{
+	margin-bottom: 10px;
+}
+.extrim-text .name{
+	font-size: 24px;
+	max-width: 75%;
+	margin-top: 15px;
+}
+.extrim-text .type{
+	font-size: 13px;
+	margin-top: 10px;
+}
+.extrim-text .cena{
+	font-size: 36px;
+}
+.text h1{
+	font-size: 23px;	
+}
+.text p{
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.text p:first-of-type{
+	font-size: 14px;
+}
+.text .blue{
+	font-size: 13px;
+	margin-bottom: 15px;
+	margin-left: 0;
+}
+table{
+	display: none;
+}
+ul{
+	padding: 0;
+	font-size: 13px;
+}
+.time{
+	font-size: 15px;
+}
+footer{
+	height: 50px;
+}
+footer p{
+	font-size: 10px;
+	line-height: 10px;
+	margin-top: 5px;
+}
+footer .soc{
+	display: inline-block;
+}
+}
+@media (min-width:481px) and (max-width:767px){
+	header{
+	height: 100%;
+}
+.logo{
+	border-bottom: 1px solid white;
+	display: flex;
+	justify-content: center;
+}
+.logo-img{
+	height: 45px;
+	width: 145px;
+}
+.logo-text span{
+	font-size: 15px;	
+	line-height: 20px;											
+}
+.tel{
+	text-align: left;
+}
+.tel span{
+	font-size: 19px;
+	line-height: 40px;
+	margin-left: 75px;
+}
+.back a{
+	line-height: 40px;
+}
+.soc{
+	display: none;
+}
+/* Section */
+.big{
+	padding: 0;
+}
+.big-bg{
+	height: 400px;
+}
+.yellow-block{
+	left: 25px;
+	bottom: 50px;
+	height: 170px;
+	width: 170px;
+}
+.yellow-block span:first-of-type{
+	font-size: 19px;
+	margin-top: 22px;
+	line-height: 22px;
+}
+.yellow-block span:nth-of-type(2){
+	font-size: 13px;
+	margin-top: 6px;
+}
+.yellow-block span:last-of-type{
+	font-size: 19px;
+}
+.big-info .col-xs-8, .big-info .col-xs-4{
+	padding: 0;
+}
+.big-info-left{
+	padding: 0;
+}
+.big-info-service{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 15px;
+}
+.big-info-left a{
+	display: block;
+	color: black;
+	text-decoration: underline;
+	border: none;
+	font-size:19px;
+	margin-right: 30px;
+}
+.big-info-left img{
+	margin-top: 15px;
+	width: 18px;
+	vertical-align: top;
+}
+.big-info-left span{
+	font-size: 30px;
+}
+.big-info-hotel{
+	display: inline-block;
+	margin-top: 5px;
+}
+.block-info{
+	width: 95vw;
+	position: relative;
+	padding: 0;
+}
+.big-info-hotel span{
+	font-weight: bold;
+	color: black;
+	display: block;
+}
+.big-info-hotel-number{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 20px;
+	width: 45px;
+	height: 45px;
+	margin-left: 0;
+	line-height: 45px;
+	margin-right: 0;
+}
+.big-info-block{
+	display: inline-block;
+	margin-right: 25px;
+}
+.big-info-block span{
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.big-info-block span:first-of-type{
+	font-size: 12px;
+}
+.big-info-block span:last-of-type{
+	font-size: 19px;
+	line-height: 19px;
+}
+.big-info-right{
+	text-align: center;
+}
+.big-info-right span{
+	display: block;
+}
+.big-info-right span:first-of-type{
+	font-size: 34px;
+	line-height: 29px;
+	margin-top: -30px;
+	margin-left: 0px;
+}
+.big-info-right span:last-of-type{
+	font-size: 18px;
+	line-height: 21px;
+	width: 132px;
+	display: block;
+	margin: 0 auto;
+}
+.extrim{
+	margin-top: 35px;
+}
+
+.extrim-text{
+	margin-bottom: 10px;
+}
+.extrim-text .name{
+	font-size: 24px;
+	max-width: 75%;
+	margin-top: 15px;
+}
+.extrim-text .type{
+	font-size: 13px;
+	margin-top: 10px;
+}
+.extrim-text .cena{
+	font-size: 36px;
+}
+.text h1{
+	font-size: 23px;	
+}
+.text p{
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+.text p:first-of-type{
+	font-size: 14px;
+}
+.text .blue{
+	font-size: 13px;
+	margin-bottom: 15px;
+	margin-left: 0;
+}
+table{
+	display: none;
+}
+ul{
+	padding: 0;
+	font-size: 13px;
+}
+.time{
+	font-size: 15px;
+}
+footer{
+	height: 50px;
+}
+footer p{
+	font-size: 10px;
+	line-height: 10px;
+	margin-top: 15px;
+}
+footer .soc{
+	display: inline-block;
+}
+}
+@media (min-width:768px) and (max-width:991px){
+
+header{
+	min-height: 90px;
+}
+.logo-img{
+	width: 48%;
+}
+.logo-text span{
+	font-family: "Arail";
+	display: block;
+	color: white;
+	font-size: 13px;	
+	line-height: 14px;											
+}
+.tel{
+	text-align: right;
+}
+.tel span{
+	font-size: 23px;
+	line-height: 34px;
+}
+.back{
+	text-align: center;
+}
+.back a{
+	font-family: "Arail";
+	text-decoration: none;
+	line-height: 36px;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+.soc{
+	position: relative;
+	height: 50px;
+}
+.soc-block{
+	top: 0px;
+	position: absolute;
+	right: 20px;
+}
+.soc a{
+	margin-left: 5px;
+}
+
+/* Section */
+.big-bg{
+	height: 500px;
+}
+.yellow-block span:first-of-type{
+	font-size: 23px;
+}
+.yellow-block span:nth-of-type(2){
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	margin-top: 10px;
+}
+.yellow-block span:last-of-type{
+	font-size: 22px;
+}
+.big-info-left a{
+	font-size: 26px;
+	margin-right: 19px;
+}
+.big-info-left img{
+	width: 20px;
+}
+.big-info-left span{
+	font-size: 33px;
+	margin-left: 30px;
+}
+.big-info-hotel{
+	display: inline-block;
+	margin-top: 5px;
+}
+.big-info-hotel span{
+	font-weight: bold;
+	color: black;
+	display: block;
+}
+.big-info-hotel a{
+	color: #787878;
+	font-weight: bold;
+	font-siza: 14px;
+}
+.block-info{
+	width: 65vw;
+}
+.big-info-block span:first-of-type{
+	font-size: 12px;
+	line-height: 13px;
+}
+.big-info-block span:last-of-type{
+	color: black;
+	font-size: 18px;
+	line-height: 19px;
+}
+.big-info-right{
+	text-align: center;
+}
+.big-info-right span{
+	display: block;
+}
+.big-info-right span:first-of-type{
+	font-size: 58px;
+	line-height: 47px;
+	margin-top: -32px;
+}
+.big-info-right span:last-of-type{
+	font-size: 28px;
+	line-height: 30px;
+}
+.extrim{
+	margin-top: 30px;
+}
+.extrim-text{
+	margin-bottom: 50px;
+}
+.extrim-text .name{
+	font-size: 24px;
+	margin-top: 18px;
+}
+.extrim-text .type{
+	font-size: 13px;
+	margin-top: 5px;
+}
+.extrim-text .cena{
+	font-size: 40px;
+	top: 5px;
+}
+.text h1{
+	font-size: 50px;	
+	font-weight: bold;
+	color: black;
+	font-family: "Trebuc";
+}
+.text p{
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.text p:first-of-type{
+	font-size: 16px;
+}
+.text h2{
+	font-size: 22px;
+	font-weight: bold;
+}
+table td{
+	font-size: 12px;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+.time{
+	color: red;
+	display: block;
+	padding-bottom: 15px;
+	font-size: 18px;
+}
+aside{
+	padding-top: 210px;
+	width: 100%;
+}
+aside span{
+	margin-left: 0%;
+}
+aside span:first-of-type{
+	font-size: 75px;
+	line-height: 90px;
+}
+aside span:nth-of-type(2){
+	font-size: 27px;
+	line-height: 32px;
+}
+aside span:last-of-type{
+	font-size: 18px;
+}
+/* Footer */
+footer{
+	height: 50px;
+}
+footer p{
+	line-height: 50px;
+	font-size: 11px;
+}
+}
+@media (min-width:992px) and (max-width:1199px){
+	.logo-img{
+		width: 155px;
+	}
+	.block-info{
+		width: 70vw;
+	}
+	.big-info-right span:first-of-type{
+		font-size: 79px;
+		margin-top: -50px;
+		line-height: 87px;
+	}
+	.big-info-right span:last-of-type{
+		font-size: 23px;
+		line-height: 31px;
+	}
+	.big-info-left span{
+		margin-left: 12px;
+	}
+	.big-info-left img{
+		width: 25px;
+	}
+	.big-info-left a{
+		margin-right: 20px;
+	}
+	.extrim-text .cena{
+		font-size: 45px;
+		top: 10px;
+	}
+	aside span:nth-of-type(2){
+		font-size: 29px;
+	}
+	aside span:last-of-type{
+		font-size: 19px;
+	}
+}
